@@ -1,0 +1,26 @@
+{
+  "name": "node-rpsls",
+  "version": "0.0.1",
+  "description": "create an installable Node.js module package for RPS",
+  "main": "./lib/rpsls.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a03-zabdi3.git"
+  },
+  "author": "zabdi3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a03-zabdi3/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a03-zabdi3#readme",
+  "bin": {
+    "node-rps": "./bin/rps-cli.js",
+    "node-rpsls": "rpsls-cli.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
