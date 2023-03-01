@@ -36,7 +36,8 @@ function help() {
                           e.g. {"player":"rock"}
           node-rps rock   Return JSON with results for RPS played against a simulated opponent.
                           e.g {"player":"rock","opponent":"scissors","result":"win"}`
-    )
+    );
+    process.exit(0);
 }
 
 function rules() {
@@ -46,5 +47,6 @@ function rules() {
         - Scissors CUTS Paper
         - Paper COVERS Rock
         - Rock CRUSHES Scissors`
-    )
+    );
+    process.exit(0);
 }
