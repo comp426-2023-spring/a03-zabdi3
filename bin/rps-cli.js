@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import minimist from 'minimist'
-import { rps } from '../lib/rpsls';
-
+//import { rps } from '../lib/rpsls';
+import { rps } from 'node-rpsls';
 var args = minimist(process.argv.slice(2));
 
 if (args.h || args.help) {
