@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "create an installable Node.js module package for RPS",
   "main": "./lib/rpsls.js",
+  "type": "module",
   "scripts": {
     "test": "node ./lib/rpsls.js"
   },
@@ -22,6 +23,5 @@
   },
   "dependencies": {
     "minimist": "^1.2.8"
-  },
-  "type": "module"
+  }
 }
