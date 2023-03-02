@@ -2,7 +2,6 @@
 import minimist from "minimist"
 import { rpsls } from "../lib/rpsls";
 
-
 //const args = minimist(process.argv.slice(2));
 var args = minimist(process.argv.slice(2));
 
