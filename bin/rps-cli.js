@@ -1,7 +1,6 @@
 #!/usr/bin/env node
+import { rps } from '../lib/rpsls';
 import minimist from 'minimist'
-//import { rps } from '../lib/rpsls';
-import { rps } from 'node-rpsls';
 var args = minimist(process.argv.slice(2));
 
 if (args.h || args.help) {
@@ -16,9 +15,9 @@ if (args.r || args.rules) {
 
 try {
     console.log(JSON.stringify(rps(args._[0])));
-} catch (shoterror) {
-    if (shoterror instanceof RangeError) {
-        console.log(`Error: ${args._[0]} is out of range.`);
+} catch (error) {
+    if (error instanceof RangeError) {
+        console.log(`Error... ${args._[0]} is out of range.`);
         rules();
     }
 }
